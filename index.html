@@ -9,6 +9,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+body, html {
+    height: 100%;
+    
+    line-height: 1.8;
+}
 
 .mySlides {display:none}
 .demo {cursor:pointer}
@@ -28,19 +33,32 @@ h1,h2,h3,h4,h5,h6 {
     font-family: "Playfair Display";
     letter-spacing: 5px;
 }
+.bgimg-1 {
+    background-image: url('pok.jpg');                 
+    min-height: 100%;
+}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
 
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
 
 </style>
 <body >
 
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  
+</div>
 
 
 
- <header class="w3-display-container w3-content " style="max-width:1700px;" id="home">
-  <img class="w3-image" src="asd.jpg" alt="Architecture" width="1600" height="300">
-</header>
 
-<!-- The Band Section -->
+ <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
     <h2 class="w3-wide">ซอ</h2>
     
